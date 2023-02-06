@@ -5,6 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link href="./css/styles.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,8 +21,8 @@
         />
     </head>
     <body>
-        <header>
-            <nav>
+        <header class="header container">
+            <nav class="header-nav">
                 <a class="logo link" href="./index.html"
                     ><span class="logo-accent">Web</span>Studio</a
                 >
@@ -29,8 +36,8 @@
                     <li><a class="link" href="">Contacts</a></li>
                 </ul>
             </nav>
-            <address>
-                <ul>
+            <address class="header-contact">
+                <ul class="header-contact-list">
                     <li>
                         <a class="link" href="mailto:info@devstudio.com"
                             >info@devstudio.com</a
@@ -47,7 +54,7 @@
         <main>
             <section class="hero">
                 <h1 class="hero-title">
-                    Effective Solutions for Your Business
+                    Effective Solutions<br />for Your Business
                 </h1>
                 <button class="hero-button button-pointer" type="button">
                     Order Service
@@ -55,117 +62,136 @@
             </section>
 
             <section>
-                <h2 class="visually-hidden">Our priorities</h2>
-                <ul>
-                    <li>
-                        <h3 class="list-title">Strategy</h3>
-                        <p class="text">
-                            Our goal is to identify the business problem to walk
-                            away with the perfect and creative solution.
-                        </p>
-                    </li>
-                    <li>
-                        <h3 class="list-title">Punctuality</h3>
-                        <p class="text">
-                            Bring the key message to the brand's audience for
-                            the best price within the shortest possible time.
-                        </p>
-                    </li>
-                    <li>
-                        <h3 class="list-title">Diligence</h3>
-                        <p class="text">
-                            Research and confirm brands that present the
-                            strongest digital growth opportunities and minimize
-                            risk.
-                        </p>
-                    </li>
-                    <li>
-                        <h3 class="list-title">Technologies</h3>
-                        <p class="text">
-                            Design practice focused on digital experiences. We
-                            bring forth a deep passion for problem-solving.
-                        </p>
-                    </li>
-                </ul>
+                <div class="container">
+                    <h2 class="visually-hidden">Our priorities</h2>
+                    <ul class="section-list section-priorities">
+                        <li>
+                            <h3 class="list-title">Strategy</h3>
+                            <p class="text">
+                                Our goal is to identify the business problem to
+                                walk away with the perfect and creative
+                                solution.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="list-title">Punctuality</h3>
+                            <p class="text">
+                                Bring the key message to the brand's audience
+                                for the best price within the shortest possible
+                                time.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="list-title">Diligence</h3>
+                            <p class="text">
+                                Research and confirm brands that present the
+                                strongest digital growth opportunities and
+                                minimize risk.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="list-title">Technologies</h3>
+                            <p class="text">
+                                Design practice focused on digital experiences.
+                                We bring forth a deep passion for
+                                problem-solving.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <section>
-                <h2 class="section-title">What are we doing</h2>
-                <ul>
-                    <li>
-                        <img
-                            src="./images/img1.jpg"
-                            alt="Screen with a website"
-                            width="360"
-                        />
-                    </li>
-                    <li>
-                        <img
-                            src="./images/img2.jpg"
-                            alt="App screens"
-                            width="360"
-                        />
-                    </li>
-                    <li>
-                        <img
-                            src="./images/img3.jpg"
-                            alt="Phone screen with an app"
-                            width="360"
-                        />
-                    </li>
-                </ul>
+                <div class="container section-pad">
+                    <h2 class="section-title">What are we doing</h2>
+                    <ul class="section-list">
+                        <li>
+                            <img
+                                src="./images/img1.jpg"
+                                alt="Screen with a website"
+                                width="360"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="./images/img2.jpg"
+                                alt="App screens"
+                                width="360"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="./images/img3.jpg"
+                                alt="Phone screen with an app"
+                                width="360"
+                            />
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <section class="section-bg">
-                <h2 class="section-title">Our Team</h2>
-                <ul>
-                    <li class="card">
-                        <img
-                            src="./images/mark.jpg"
-                            alt="Mark Guerrero"
-                            width="264"
-                        />
-                        <h3 class="list-title">Mark Guerrero</h3>
-                        <p class="text">Product Designer</p>
-                    </li>
-                    <li class="card">
-                        <img
-                            src="./images/tom.jpg"
-                            alt="Tom Ford"
-                            width="264"
-                        />
-                        <h3 class="list-title">Tom Ford</h3>
-                        <p class="text">Frontend Developer</p>
-                    </li>
-                    <li class="card">
-                        <img
-                            src="./images/camila.jpg"
-                            alt="Camila Garcia"
-                            width="264"
-                        />
-                        <h3 class="list-title">Camila Garcia</h3>
-                        <p class="text">Marketing</p>
-                    </li>
-                    <li class="card">
-                        <img
-                            src="./images/daniel.jpg"
-                            alt="Daniel Wilson"
-                            width="264"
-                        />
-                        <h3 class="list-title">Daniel Wilson</h3>
-                        <p class="text">UI Designer</p>
-                    </li>
-                </ul>
+                <div class="container section-pad">
+                    <h2 class="section-title">Our Team</h2>
+                    <ul class="section-list">
+                        <li class="card">
+                            <img
+                                src="./images/mark.jpg"
+                                alt="Mark Guerrero"
+                                width="264"
+                            />
+                            <div class="team-member-text">
+                                <h3 class="list-title">Mark Guerrero</h3>
+                                <p class="text">Product Designer</p>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <img
+                                src="./images/tom.jpg"
+                                alt="Tom Ford"
+                                width="264"
+                            />
+                            <div class="team-member-text">
+                                <h3 class="list-title">Tom Ford</h3>
+                                <p class="text">Frontend Developer</p>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <img
+                                src="./images/camila.jpg"
+                                alt="Camila Garcia"
+                                width="264"
+                            />
+                            <div class="team-member-text">
+                                <h3 class="list-title">Camila Garcia</h3>
+                                <p class="text">Marketing</p>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <img
+                                src="./images/daniel.jpg"
+                                alt="Daniel Wilson"
+                                width="264"
+                            />
+                            <div class="team-member-text">
+                                <h3 class="list-title">Daniel Wilson</h3>
+                                <p class="text">UI Designer</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
         <footer class="footer">
-            <a class="logo link logo-light" href="./index.html"
-                ><span class="logo-accent">Web</span>Studio</a
-            >
-            <p class="text">
-                Increase the flow of customers and sales for your business with
-                digital marketing & growth solutions.
-            </p>
+            <div class="container footer-container">
+                <a class="logo link logo-light" href="./index.html"
+                    ><span class="logo-accent">Web</span>Studio</a
+                >
+                <p class="text footer-text">
+                    Increase the flow of customers and sales for your business
+                    with digital marketing & growth solutions.
+                </p>
+            </div>
         </footer>
     </body>
 </html>
