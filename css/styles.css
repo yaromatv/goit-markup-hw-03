@@ -107,6 +107,10 @@ body {
     margin: -1px;
 }
 
+.card-text {
+    padding: 32px 16px;
+}
+
 /* HEADER */
 
 .logo {
@@ -123,6 +127,10 @@ body {
 
 .logo-accent {
     color: var(--accent-color);
+}
+
+.header-border {
+    border-bottom: var(--accent-color-medium) solid 1px;
 }
 
 .header {
@@ -251,11 +259,19 @@ body {
     text-align: center;
 }
 
-.team-member-text {
-    padding: 32px 16px;
+/* PORTFOLIO MAIN */
+
+.portfolio-pad {
+    padding: 96px 0 120px 0;
 }
 
-/* PORTFOLIO MAIN */
+.portfolio-button {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    margin-bottom: 72px;
+}
 
 .filter-button {
     color: var(--accent-color);
@@ -267,6 +283,9 @@ body {
     background-color: var(--accent-color-light);
     border: 1px solid var(--accent-color-medium);
     border-radius: 4px;
+
+    display: inline-block;
+    padding: 12px 24px;
 }
 
 .filter-button:hover,
@@ -276,4 +295,16 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     border-color: transparent;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-item {
+    height: 420px;
+    width: 360px;
+    border: var(--accent-color-medium) solid 1px;
 }
