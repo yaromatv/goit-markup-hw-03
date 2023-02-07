@@ -36,8 +36,12 @@ ol {
     margin: 0 auto;
 }
 
-.section {
+.section-pad {
     padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-pad-bottom {
     padding-bottom: 120px;
 }
 
@@ -169,15 +173,15 @@ body {
 }
 
 .footer {
-    color: var(--accent-color-medium);
     background-color: var(--nav-color);
 }
 
-.footer-container {
+.footer-pad {
     padding: 100px 0;
 }
 
 .footer-text {
+    color: var(--accent-color-medium);
     width: 264px;
     margin-top: 16px;
 }
@@ -186,6 +190,7 @@ body {
 .hero {
     text-align: center;
     background-color: var(--nav-color);
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -194,8 +199,8 @@ body {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-
-    padding-top: 188px;
+    width: 496px;
+    margin: 0 auto;
 }
 
 .hero-button {
@@ -214,15 +219,10 @@ body {
     display: inline-block;
     padding: 16px 32px;
     margin-top: 48px;
-    margin-bottom: 188px;
 }
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--accent-color-hover);
-}
-
-.section-priorities {
-    margin-top: 120px;
 }
 
 .section-title {
@@ -237,13 +237,13 @@ body {
     margin-bottom: 72px;
 }
 
-.section-pad {
-    padding: 120px 0;
-}
-
 .section-list {
     display: flex;
     gap: 24px;
+}
+
+.list-item {
+    width: 264px;
 }
 
 .section-bg {
@@ -304,7 +304,10 @@ body {
 }
 
 .portfolio-item {
-    height: 420px;
     width: 360px;
+}
+
+.portfolio .card-text {
     border: var(--accent-color-medium) solid 1px;
+    border-top: 0;
 }
